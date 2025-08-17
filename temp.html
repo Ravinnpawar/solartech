@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- roundSlider CSS -->
+<link rel="stylesheet" href="slider/roundslider.min.css">
+<!-- roundSlider JS -->
+<script src="slider/roundslider.min.js"></script>
+    
+       
+</head>
+ <body>
+	
+<div class="container">
+    <div id="slider"></div>
+      change event :<div id="range"></div>
+  drag event : <div id="range1"></div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+	$("#slider").roundSlider({
+    sliderType: "min-range",
+    min: 1,
+    max: 15,
+    value: 10,
+    change: function (args) {
+		var slider_value=args.value;
+		alert(a)
+   
+ } ,
+ /* drag:function(args) {
+ $('#range1').html(args.value)
+ } */
+    
+     
+});
+	$('.rs-tooltip').append(' Years');
+	
+});
+</script>
+
+ </body>
+</html>
